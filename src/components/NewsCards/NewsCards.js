@@ -17,7 +17,7 @@ import useStyles from "./styles";
 import NewsCard from "../NewsCard/NewsCard";
 
 const infoCards = [
-  { color: "#c6d8d3", title: "Latest News", text: "Give me the latest news" },
+
   {
     color: "#c6d8d3",
     title: "News by Categories",
@@ -46,7 +46,7 @@ const NewsCards = ({ articles , activeArticle }) => {
         <Grid
           classname={classes.container}
           container
-          alighItems="stretch"
+          alighItems="center"
           spacing={3}
         >
           {infoCards.map((infoCard) => (
@@ -54,8 +54,8 @@ const NewsCards = ({ articles , activeArticle }) => {
               item
               xs={12}
               sm={6}
-              md={4}
-              lg={3}
+              md={3}
+              lg={4}
               className={classes.infoCard}
             >
               {" "}
@@ -64,16 +64,16 @@ const NewsCards = ({ articles , activeArticle }) => {
                 style={{ backgroundColor: infoCard.color }}
               >
                 {" "}
-                <Typography variant="h6"> {infoCard.title}</Typography>
+                <Typography variant="h7"  gutterBottom><strong> {infoCard.title}</strong> </Typography>
                 {infoCard.info ? (
-                  <Typography variant="h8">
+                  <Typography colassName="info" variant="h9" color="textSecondary" gutterBottom>
                     <strong>
                       {" "}
                       {infoCard.title.split(" ")[2]} : <br /> {infoCard.info}{" "}
                     </strong>
                   </Typography>
                 ) : null}
-                <Typography variant="h10">
+                <Typography className="sample" variant="h12" color="textPrimary">
                   {" "}
                   Try Saying : <br /> {infoCard.text}{" "}
                 </Typography>

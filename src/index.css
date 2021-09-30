@@ -10,6 +10,11 @@ body{
 	margin: 0;
 	background-color: #c6d8d3;
 	font-family: 'Quicksand', sans-serif;
+
+}
+.sample{
+	font-size:20px;
+	
 }
 
 * {
@@ -20,7 +25,9 @@ html{
 	scroll-behavior: smooth;
 }
  
- .header{
+ .header, .footer{
 	 text-align: center;
 	 color: #3a3335;
  }
+
+ 
