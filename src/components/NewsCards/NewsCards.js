@@ -64,18 +64,18 @@ const NewsCards = ({ articles , activeArticle }) => {
                 style={{ backgroundColor: infoCard.color }}
               >
                 {" "}
-                <Typography variant="h5"> {infoCard.title}</Typography>
+                <Typography variant="h6"> {infoCard.title}</Typography>
                 {infoCard.info ? (
-                  <Typography variant="h6">
+                  <Typography variant="h8">
                     <strong>
                       {" "}
                       {infoCard.title.split(" ")[2]} : <br /> {infoCard.info}{" "}
                     </strong>
                   </Typography>
                 ) : null}
-                <Typography variant="h6">
+                <Typography variant="h10">
                   {" "}
-                  Say : <br /> <i> {infoCard.text}</i>{" "}
+                  Try Saying : <br /> {infoCard.text}{" "}
                 </Typography>
               </div>{" "}
             </Grid>

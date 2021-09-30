@@ -19,3 +19,8 @@ body{
 html{
 	scroll-behavior: smooth;
 }
+ 
+ .header{
+	 text-align: center;
+	 color: #3a3335;
+ }

@@ -51,7 +51,11 @@ const App = () => {
   }, []);
 
   return (
-    <div style={{backgroundColor: "#c6d8d3"} }>
+    <div style={{backgroundColor: "#c6d8d3" , margin: "15px"} }>
+      <div className="header">
+        <h2 > Voice News Search - AI </h2>
+       
+      </div>
       <div className={classes.logoContainer}>
         <img
           src="https://static.voices.com/wp-content/uploads/2019/02/MR_3006-SyntheticVoiceGuide.jpg"
